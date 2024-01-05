@@ -8,7 +8,7 @@ const Post = ({ data }) => {
             <Card as={Link} to={`/posts/${data._id}`} className="h-100">
                 <Card.Img
                     src={`data:image/png;base64,${arrayBufferToBase64(
-                        data.image.data.data
+                        data.image
                     )}`}
                     width="100px"
                 ></Card.Img>

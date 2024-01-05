@@ -6,6 +6,7 @@ const getPosts = async () => {
     try {
         const result = await axios.get(`${API_URL}/api/posts`);
         if (result.status === 200) {
+            console.log(result.data);
             return result.data;
         } else {
             console.log('Error desconocido');
